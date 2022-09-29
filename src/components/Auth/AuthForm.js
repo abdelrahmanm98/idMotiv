@@ -1,8 +1,10 @@
 import React, { useState, useRef, useContext } from 'react';
+import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import AuthContext from '../../store/auth-context';
 
 const AuthForm = () => {
+  const history = useHistory(); // Redirecting The User
   const emailInputRef = useRef();
   const passwordInputRef = useRef();
 
@@ -65,6 +67,7 @@ const AuthForm = () => {
       })
       .then((data) => {
         authCtx.login(data.idToken);
+        history.replace('/dashboard'); // Redirecting The User to dashboard page
       })
       .catch((err) => {
         alert(err.message);
