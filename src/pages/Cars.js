@@ -1,5 +1,5 @@
 const Cars = () => {
-  return <h1>Cars</h1>
+  return <h1>Cars</h1>;
 };
 
 export default Cars;

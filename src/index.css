@@ -2,3 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.svg-icon-pass {
+  position: relative;
+}
+.svg-icon-pass:before {
+  content: '';
+  position: absolute;
+  right: 18px;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+}
+.svg-icon-show:before {
+  background: url(./components/Auth/AuthIcon/ShowPass.svg) center / contain
+    no-repeat;
+}
+
+.svg-icon-hide:before {
+  background: url(./components/Auth/AuthIcon/HidePass.svg) center / contain
+    no-repeat;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: 'DM Sans', sans-serif !important;
+
+  font-family: 'Noto Sans', sans-serif;
+
+  font-family: 'Noto Sans JP', sans-serif;
+}
