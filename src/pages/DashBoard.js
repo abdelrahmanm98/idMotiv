@@ -1,5 +1,6 @@
+import Dashboard from '../components/Dashboard/Dashboard';
 const DashBoard = () => {
-  return <h1>DashBoard</h1>;
+  return <Dashboard />;
 };
 
 export default DashBoard;
