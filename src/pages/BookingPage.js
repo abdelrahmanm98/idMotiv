@@ -1,100 +1,36 @@
+import { useState, useEffect } from 'react';
 import Booking from '../components/Cars/Booking';
 
-const DUMMY_DATA_CARS = [
-  {
-    id: 'c1',
-    title: 'Audi A4',
-    type: 'Sedan',
-    Seating: '4',
-    booking: '',
-    gearStick: 'Manual',
-    price: '400',
-    photo: 'audiblack.png',
-  },
-  {
-    id: 'c2',
-    title: 'Suv Gla Mercedes',
-    type: 'CrossOver ',
-    Seating: '5',
-    booking: '',
-    gearStick: 'Automatic',
-    price: '700',
-    photo: 'car2.png',
-  },
-  {
-    id: 'c3',
-    title: 'Q5 Sportback',
-    type: 'CrossOver',
-    Seating: '5',
-    booking: '',
-    gearStick: 'Automatic',
-    price: '900',
-    photo: 'car3.png',
-  },
-  {
-    id: 'c4',
-    title: 'Suzuki Dzire',
-    type: 'Sedan',
-    Seating: '4',
-    booking: '',
-    gearStick: 'Manual',
-    price: '300',
-    photo: 'car4.png',
-  },
-  {
-    id: 'c5',
-    title: 'Suzuki Swift',
-    type: 'Sedan',
-    Seating: '4',
-    booking: '',
-    gearStick: 'Manual',
-    price: '300',
-    photo: 'car5.png',
-  },
-  {
-    id: 'c6',
-    title: 'Toyota Suv',
-    type: 'Sedan',
-    Seating: '4',
-    booking: 'Booking',
-    gearStick: 'Manual',
-    price: '300',
-    photo: 'car6.png',
-  },
-  {
-    id: 'c7',
-    title: 'Audi A4',
-    type: 'Sedan',
-    Seating: '4',
-    booking: '',
-    gearStick: 'Manual',
-    price: '400',
-    photo: 'car3.png',
-  },
-  {
-    id: 'c8',
-    title: 'Suv Gla Mercedes',
-    type: 'CrossOver ',
-    Seating: '5',
-    booking: '',
-    gearStick: 'Automatic',
-    price: '700',
-    photo: 'car5.png',
-  },
-  {
-    id: 'c9',
-    title: 'Q5 Sportback',
-    type: 'CrossOver',
-    Seating: '5',
-    booking: '',
-    gearStick: 'Automatic',
-    price: '900',
-    photo: 'car4.png',
-  },
-];
-
 const BookingPage = () => {
-  return <Booking dataCars={DUMMY_DATA_CARS} />;
+  const [booking, setBooking] = useState([]);
+
+  useEffect(() => {
+    const fetchCars = async () => {
+      const response = await fetch(
+        'https://react-sendrequset-default-rtdb.firebaseio.com/cars.json'
+      );
+      const responseData = await response.json();
+
+      const loadedCars = [];
+
+      for (const key in responseData) {
+        loadedCars.push({
+          id: key,
+          title: responseData[key].title,
+          type: responseData[key].type,
+          Seating: responseData[key].Seating,
+          booking: responseData[key].booking,
+          gearStick: responseData[key].gearStick,
+          price: responseData[key].price,
+          photo: responseData[key].photo,
+        });
+      }
+      setBooking(loadedCars);
+    };
+    fetchCars();
+  }, []);
+
+  return <Booking dataCars={booking} />;
 };
 
 export default BookingPage;
