@@ -19,6 +19,15 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+.centered {
+  margin: 25rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+}
+
 .svg-icon-pass {
   position: relative;
 }

@@ -4,6 +4,7 @@ import AuthPage from './pages/AuthPage';
 import Booking from './pages/BookingPage';
 import DashBoard from './pages/DashBoard';
 import Layout from './components/Layout/Layout';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route path='/booking'>
           <Booking />
+        </Route>
+        <Route path='*'>
+          <NotFound />
         </Route>
       </Switch>
     </Layout>
