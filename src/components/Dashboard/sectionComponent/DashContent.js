@@ -10,7 +10,7 @@ const DashContent = (props) => {
       <div>
         <Advertisement />
       </div>
-      <main className='flex flex-row h-[15.5rem] scale-105 w-[89rem] ml-[3.2em] mb-[6rem]'>
+      <main className='flex flex-row h-[15.5rem] scale-105 w-[89rem] ml-[3.2em] mb-[1rem]'>
         <div className='bg-[#E1DFA4] basis-1/3 rounded  hover:bg-[#F2EF9A]'>
           <div className='my-4'>
             <img

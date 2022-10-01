@@ -17,7 +17,7 @@ const Header = () => {
       </div>
 
       <div className={classes['user-actions']}>
-        <button>
+        <button className='mr-[1rem]'>
           <Notifications />
         </button>
         <button className='absolute top-[1px]'>

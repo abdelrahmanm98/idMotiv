@@ -1,5 +1,5 @@
 import { Fragment, useState } from 'react';
-import carOne from '../PhotoCars/audiblack.png';
+
 const CarUi = (props) => {
   const [redHeart, setredHeart] = useState(false);
   const [emptyHeart, setemptyHeart] = useState(true);
@@ -17,7 +17,7 @@ const CarUi = (props) => {
     <Fragment>
       <div
         key={props.id}
-        className='bg-white rounded-2xl basis-1/3 hover:border-[#a162f7]  hover:border hover:border-solid'
+        className='bg-white rounded-2xl basis-[30.9%] hover:bg-[#ebebeb]'
       >
         <div className='mt-[1.2rem] relative'>
           {redHeart && (
@@ -41,11 +41,18 @@ const CarUi = (props) => {
         <h3 className='ml-[2rem] text-base mb-4 Recommend text-[#72767C] font-normal'>
           {props.type}
         </h3>
-        <div className='mb-[1rem]'>
-          <img className='ml-[1.2rem] h-[7.5rem]' src={carOne} alt='car' />
+        <div className='mb-[2rem] relative'>
+          <img
+            className='m-auto h-[7rem]'
+            src={require(`../PhotoCars/${props.photo}`)}
+            alt='car'
+          />
+          <span className='absolute top-[50%] font-medium text-[#5F6165] text-sm right-[7%]'>
+            {props.booking}
+          </span>
         </div>
 
-        <div className='relative'>
+        <div className='relative mb-4'>
           <span className='mr-[1.2rem]'>
             <img
               className='inline-block ml-[2rem] mt-[-3px]'

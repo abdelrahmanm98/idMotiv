@@ -3,7 +3,7 @@ import CarUi from './CarUi';
 const MainBooking = (props) => {
   return (
     <Fragment>
-      <main>
+      <main className='overflow-auto'>
         <div className='py-8 px-10'>
           <h3 className='font-bold text-3xl mb-[2rem] text-black'>Booking</h3>
           <div className='flex flex-row relative'>
@@ -16,6 +16,7 @@ const MainBooking = (props) => {
               </span>
               <span>
                 <select className='text-[#5F6165] rounded-[22.5px] pr-8 pl-4 py-2 bg-white text-base font-medium'>
+                  <option value=''>Select Car</option>
                   <option value='mercedes'>Mercedes</option>
                   <option value='audi'>Audi</option>
                   <option value='opel'>Opel</option>
@@ -39,13 +40,14 @@ const MainBooking = (props) => {
             </div>
           </div>
         </div>
-        <main className='flex flex-row h-[16.5rem] scale-105 w-[92.5rem] gap-[1.6rem] ml-[4.8em] mb-[6rem]'>
+        <main className='flex  flex-wrap h-[auto] mt-[1.5rem] scale-y-105 w-[auto] gap-[1.6rem] ml-[2.5em] mb-[4rem]'>
           {props.dataCars.map((data) => (
             <CarUi
               key={data.id}
               title={data.title}
               type={data.type}
               Seating={data.Seating}
+              booking={data.booking}
               gearStick={data.gearStick}
               price={data.price}
               photo={data.photo}
