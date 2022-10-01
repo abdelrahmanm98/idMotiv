@@ -356,6 +356,11 @@ body {
   fill: white;
 }
 
+.fillter:hover svg {
+  fill: white;
+  display: inline-block;
+}
+
 .content-wrap .info-boxes .info-box:hover .svgNumber {
   fill: white;
 }
