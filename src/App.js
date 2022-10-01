@@ -1,7 +1,7 @@
 import { Switch, Route } from 'react-router-dom';
 
 import AuthPage from './pages/AuthPage';
-import Cars from './pages/Cars';
+import Cars from './pages/BookingPage';
 import DashBoard from './pages/DashBoard';
 import Layout from './components/Layout/Layout';
 
@@ -16,7 +16,7 @@ function App() {
         <Route path='/dashboard'>
           <DashBoard />
         </Route>
-        <Route path='/cars'>
+        <Route path='/booking'>
           <Cars />
         </Route>
       </Switch>

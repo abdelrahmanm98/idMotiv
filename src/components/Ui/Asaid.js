@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 
 import AuthContext from '../../store/auth-context';
@@ -33,17 +33,25 @@ const Asaid = () => {
         <section className={classes.dicover}>
           <ul>
             <li className='w-[12rem]'>
-              <a href='#' className={classes.formatLogo}>
+              <NavLink
+                to='/dashboard'
+                activeClassName={classes.active}
+                className={classes.formatLogo}
+              >
                 <DathBoard />
                 Dashboard
-              </a>
+              </NavLink>
             </li>
 
             <li className='w-[12rem]'>
-              <a href='#' className={classes.formatLogo}>
+              <NavLink
+                to='/booking'
+                activeClassName={classes.active}
+                className={classes.formatLogo}
+              >
                 <Cars />
                 Cars
-              </a>
+              </NavLink>
             </li>
           </ul>
         </section>
