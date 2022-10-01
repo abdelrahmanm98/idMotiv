@@ -3,14 +3,14 @@ import Aside from '../Ui/Asaid';
 import Header from '../Ui/Header';
 import DashLayout from '../Layout/DashLayout';
 import MainBooking from './MainBooking';
-import CarUi from './CarUi';
-const Booking = () => {
+
+const Booking = (props) => {
   return (
     <Fragment>
       <DashLayout>
         <Aside />
         <Header />
-        <MainBooking />
+        <MainBooking dataCars={props.dataCars} />
       </DashLayout>
     </Fragment>
   );

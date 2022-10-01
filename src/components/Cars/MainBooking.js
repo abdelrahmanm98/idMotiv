@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import CarUi from './CarUi';
-const MainBooking = () => {
+const MainBooking = (props) => {
   return (
     <Fragment>
       <main>
@@ -39,7 +39,19 @@ const MainBooking = () => {
             </div>
           </div>
         </div>
-        <CarUi />
+        <main className='flex flex-row h-[16.5rem] scale-105 w-[92.5rem] gap-[1.6rem] ml-[4.8em] mb-[6rem]'>
+          {props.dataCars.map((data) => (
+            <CarUi
+              key={data.id}
+              title={data.title}
+              type={data.type}
+              Seating={data.Seating}
+              gearStick={data.gearStick}
+              price={data.price}
+              photo={data.photo}
+            />
+          ))}
+        </main>
       </main>
     </Fragment>
   );

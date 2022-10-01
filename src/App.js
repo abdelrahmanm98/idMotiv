@@ -10,7 +10,8 @@ function App() {
     <Layout>
       <Switch>
         <Route path='/' exact>
-          <AuthPage />
+          {/* <AuthPage /> */}
+          <Booking />
         </Route>
         <Route path='/dashboard'>
           <DashBoard />
