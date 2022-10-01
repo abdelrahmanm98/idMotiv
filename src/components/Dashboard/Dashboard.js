@@ -1,14 +1,14 @@
 import { Fragment } from 'react';
 
 import Infobox from './sectionComponent/Infobox';
-import Advertisement from './sectionComponent/Advertisement';
-import Header from './sectionComponent/Header';
-import Asaid from './sectionComponent/Asaid';
+
+import Header from '../Ui/Header';
+import Asaid from '../Ui/Asaid';
 
 import ContentLayout from '../Layout/ContentLayout';
 import DashLayout from '../Layout/DashLayout';
 
-const Dashboard = () => {
+const Dashboard = (props) => {
   return (
     <Fragment>
       {/* (Start) LayOut DashBoard Content */}
@@ -22,13 +22,18 @@ const Dashboard = () => {
         {/* (Start) Layout Content  */}
         <ContentLayout>
           {/* Vehicle characteristics */}
-          <Infobox />
 
-          {/* Loans and Badges */}
-          <Advertisement />
-
+          {props.dataInfo.map((data) => (
+            <Infobox
+              key={data.id}
+              title={data.title}
+              svgtop={data.svgCodeTop}
+              svgbottom={data.svgCodeBottom}
+            />
+          ))}
           {/* (End) Layout Content  */}
         </ContentLayout>
+
         {/* (End) LayOut DashBoard Content */}
       </DashLayout>
     </Fragment>

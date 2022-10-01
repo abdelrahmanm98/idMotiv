@@ -187,28 +187,27 @@ body {
 /* Section Content */
 .content-wrap {
   grid-area: content;
-  padding: 2em;
+  padding: 1em;
   overflow: auto;
 }
 
 .content-wrap .info-boxes {
-  padding: 1em 0em 4em 1.5em;
+  padding: 1em 0em 3.5em 1.5em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10em;
 }
 
 .content-wrap .info-boxes .info-box {
   background: #fff;
-  height: 266px;
-  width: 232px;
+  height: 265px;
+  width: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0px 0em;
   border: 1px solid #ede8f0;
   border-radius: 10px;
-  transform: scale(1.25);
+  transform: scale(1.15);
   position: relative;
 }
 .content-wrap .info-boxes .info-box:hover {
@@ -226,7 +225,6 @@ body {
   background-color: #a162f71a;
   width: max-content;
   border-radius: 50%;
-
   padding: 3px;
 }
 
@@ -336,15 +334,29 @@ body {
   fill: #f4f5f947;
 }
 
+.contentSvgyello {
+  fill: '#F6CC0D';
+}
+
+.contentSvgred {
+  fill: '#FF7E86';
+}
+
+.contentSvgprp {
+  fill: #ff9619;
+}
+
 .contentSvgWhite {
   fill: #b37efc;
 }
-
-.content-wrap .info-boxes .info-box:hover .svgNumber {
+.content-wrap .info-boxes .info-box:hover .contentSvgWhite,
+.content-wrap .info-boxes .info-box:hover .contentSvgyello,
+.content-wrap .info-boxes .info-box:hover .contentSvgred,
+.content-wrap .info-boxes .info-box:hover .contentSvgprp {
   fill: white;
 }
 
-.content-wrap .info-boxes .info-box:hover .contentSvgWhite {
+.content-wrap .info-boxes .info-box:hover .svgNumber {
   fill: white;
 }
 
@@ -361,14 +373,14 @@ body {
 
 .content-wrap .info-boxes .info-box .box-icon svg {
   display: block;
-  width: 25px;
-  height: 25px;
+  width: 23px;
+  height: 23px;
 }
 
-.content-wrap .info-boxes .info-box .box-icon svg path,
+/* .content-wrap .info-boxes .info-box .box-icon svg path,
 .content-wrap .info-boxes .info-box .box-icon svg circle {
   fill: #b37efc;
-}
+} */
 
 .content-wrap .info-boxes .info-box.active svg circle,
 .content-wrap .info-boxes .info-box.active svg path {

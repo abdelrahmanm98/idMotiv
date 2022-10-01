@@ -1,6 +1,6 @@
-import classes from '../Dashboard.module.css';
-import { ReactComponent as Notifications } from '../SvgIcon/notification.svg';
-import porfilePage from '../Mask-group.png';
+import classes from '../Dashboard/Dashboard.module.css';
+import { ReactComponent as Notifications } from '../Dashboard/SvgIcon/notification.svg';
+import porfilePage from './Mask-group.png';
 const Header = () => {
   return (
     <header className={classes['search-wrap']}>

@@ -2,14 +2,14 @@ import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
 
-import AuthContext from '../../../store/auth-context';
+import AuthContext from '../../store/auth-context';
 
-import classes from '../Dashboard.module.css';
-import iconPage from '../SvgIcon/logo-page.svg';
-import { ReactComponent as DathBoard } from '../SvgIcon/dashboard-icon.svg';
-import { ReactComponent as Cars } from '../SvgIcon/car.svg';
-import { ReactComponent as Settings } from '../SvgIcon/settings.svg';
-import { ReactComponent as Logout } from '../SvgIcon/logout.svg';
+import classes from '../Dashboard/Dashboard.module.css';
+import iconPage from '../Dashboard/SvgIcon/logo-page.svg';
+import { ReactComponent as DathBoard } from '../Dashboard/SvgIcon/dashboard-icon.svg';
+import { ReactComponent as Cars } from '../Dashboard/SvgIcon/car.svg';
+import { ReactComponent as Settings } from '../Dashboard/SvgIcon/settings.svg';
+import { ReactComponent as Logout } from '../Dashboard/SvgIcon/logout.svg';
 
 const Asaid = () => {
   const history = useHistory(); // Redirecting The User
