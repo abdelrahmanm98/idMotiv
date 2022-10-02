@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Dashboard from '../components/Dashboard/Dashboard';
 import classes from '../components/Dashboard/Dashboard.module.css';
 const DUMMY_DATA_INFO = [
@@ -179,7 +180,33 @@ const DUMMY_DATA_INFO = [
 ];
 
 const DashBoard = () => {
-  return <Dashboard dataInfo={DUMMY_DATA_INFO} />;
+  const [dashCars, setdashCars] = useState([]);
+
+  useEffect(() => {
+    const fetchCars = async () => {
+      const response = await fetch(
+        'https://react-sendrequset-default-rtdb.firebaseio.com/dashCars.json'
+      );
+      const responseData = await response.json();
+
+      const loadedCars = [];
+
+      for (const key in responseData) {
+        loadedCars.push({
+          id: key,
+          title: responseData[key].title,
+          photo: responseData[key].photo,
+          price: responseData[key].price,
+          recommend: responseData[key].recommend,
+          color: responseData[key].color,
+        });
+      }
+      setdashCars(loadedCars);
+    };
+    fetchCars();
+  }, []);
+
+  return <Dashboard dataInfo={DUMMY_DATA_INFO} dashCars={dashCars} />;
 };
 
 export default DashBoard;

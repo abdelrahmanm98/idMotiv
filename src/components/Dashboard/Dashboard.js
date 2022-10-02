@@ -20,7 +20,7 @@ const Dashboard = (props) => {
         <Asaid />
 
         {/* (Start) Layout Content  */}
-        <ContentLayout>
+        <ContentLayout passDataCars={props.dashCars}>
           {/* Vehicle characteristics */}
 
           {props.dataInfo.map((data) => (

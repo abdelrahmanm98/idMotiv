@@ -4,7 +4,7 @@ import { ReactComponent as BoyRun } from '../SvgIcon/people-rushing-3.svg';
 
 const Advertisement = () => {
   return (
-    <section className='mt-0 mr-0 mb-8 ml-[2.2rem]'>
+    <section className='mt-0 mr-[80px] mb-8 ml-[2.2rem]'>
       <main className='flex'>
         <div className='pt-[2rem] mr-[7.4rem] rounded-[4px] scale-105  w-[42.4rem]  bg-[#FFE0BA] text-black relative h-[16rem]'>
           <h2 className='text-2xl text-[#0F2837] font-bold absolute top-[3.5rem] left-[2rem]'>

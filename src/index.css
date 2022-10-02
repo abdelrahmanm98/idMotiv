@@ -63,3 +63,31 @@ body {
   background: url(./components/Dashboard/SvgIcon/search.svg) center / contain
     no-repeat;
 }
+
+.contentCarsone {
+  background-color: #e1dfa4;
+}
+.contentCarsone:hover {
+  background-color: #f2ef9a;
+}
+
+.contentCarstwo {
+  background-color: #c4dfed;
+}
+.contentCarstwo:hover {
+  background-color: #dfeef6;
+}
+.contentCarsthree {
+  background-color: #f4e3e5;
+}
+
+.contentCarsthree:hover {
+  background-color: #fad4d9;
+}
+
+.contentCarsone,
+.contentCarstwo,
+.contentCarsthree {
+  padding: 0.5rem 0;
+  border-radius: 14px;
+}

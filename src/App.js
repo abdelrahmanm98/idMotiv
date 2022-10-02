@@ -11,8 +11,8 @@ function App() {
     <Layout>
       <Switch>
         <Route path='/' exact>
-          {/* <AuthPage /> */}
-          <Booking />
+          <AuthPage />
+          {/* <Booking /> */}
         </Route>
         <Route path='/dashboard'>
           <DashBoard />
