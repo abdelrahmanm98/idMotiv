@@ -17,7 +17,7 @@ const CarUi = (props) => {
     <Fragment>
       <div
         key={props.id}
-        className='bg-white rounded-2xl basis-[30.9%] hover:bg-[#ebebeb]'
+        className='bg-white rounded-2xl basis-[30.9%] md:basis-[89.6%] xl:basis-[43.6%] xll:basis-[30.9%] hover:bg-[#ebebeb]'
       >
         <div className='mt-[1.2rem] relative'>
           {redHeart && (
@@ -53,7 +53,7 @@ const CarUi = (props) => {
         </div>
 
         <div className='relative mb-4'>
-          <span className='mr-[1.2rem]'>
+          <span className='mr-[1.2rem] xl:mr-0 1xl:mr-[1.2rem]'>
             <img
               className='inline-block ml-[2rem] mt-[-3px]'
               src={require('../Dashboard/SvgIcon/person.svg').default}
@@ -63,7 +63,7 @@ const CarUi = (props) => {
             </span>
           </span>
 
-          <span className='mr-[1.2rem]'>
+          <span className='mr-[1.2rem] xl:mr-0 1xl:mr-[1.2rem]'>
             <img
               className='inline-block'
               src={require('../Dashboard/SvgIcon/replay-prp.svg').default}
@@ -73,7 +73,7 @@ const CarUi = (props) => {
             </span>
           </span>
 
-          <span className='mr-[1.2rem] text-lg font-bold text-black absolute right-3.5'>
+          <span className='mr-[1.2rem] xl:mr-0 1xl:mr-[1.2rem] text-lg font-bold text-black absolute right-3.5'>
             ${props.price}
             <span className='font-normal text-[#72767C]'>/d</span>
           </span>

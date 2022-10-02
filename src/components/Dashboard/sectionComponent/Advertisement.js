@@ -4,14 +4,14 @@ import { ReactComponent as BoyRun } from '../SvgIcon/people-rushing-3.svg';
 
 const Advertisement = () => {
   return (
-    <section className='mt-0 mr-[80px] mb-8 ml-[2.2rem]'>
-      <main className='flex'>
-        <div className='pt-[2rem] mr-[7.4rem] rounded-[4px] scale-105  w-[42.4rem]  bg-[#FFE0BA] text-black relative h-[16rem]'>
+    <section className='mt-0 mr-[80px] mb-8 ml-[1.5rem]'>
+      <main className='grid  grid-cols-[2fr_1fr_1fr] '>
+        <div className='pt-[2rem]  rounded-[4px] mr-[3.4rem] sm:w-[20rem]  1-2xl:w-[auto] xll:mr-[3.4] 3xl:mr[7rem]   bg-[#FFE0BA] text-black relative h-[16rem]'>
           <h2 className='text-2xl text-[#0F2837] font-bold absolute top-[3.5rem] left-[2rem]'>
             Apply for a car loan !
           </h2>
 
-          <span className='absolute right-[2rem]'>
+          <span className='absolute right-[2rem] sm:hidden  2-1xl:inline'>
             <LoanPhoto />
           </span>
           <span className='text-base text-[#0F2837] font-normal absolute top-[6rem] left-[2rem] '>
@@ -24,7 +24,7 @@ const Advertisement = () => {
           </div>
         </div>
         {/* ***************************************** */}
-        <div className='pt-[1.5rem] pb-[3rem] pl-[2rem] w-[19rem] relative rounded-[4px] scale-105 pr-12 mr-[4rem] justify-items-center bg-[#0F2837]'>
+        <div className='pt-[1.5rem] pb-[3rem] pl-[2rem] w-[19rem] relative rounded-[4px]  pr-12 mr-[4rem] justify-items-center bg-[#0F2837]'>
           <h2 className='absolute font-bold left-[2rem] w-[30%] text-2xl text-white'>
             You have earned{' '}
             <span className='text-[#FF9619] font-bold text-[40px]'>20</span>{' '}
@@ -38,7 +38,7 @@ const Advertisement = () => {
           </span>
         </div>
         {/* ***************************************** */}
-        <div className='pt-[1.5rem] pb-[3rem] pl-[2rem] w-[19rem] relative rounded-[4px] scale-105  pr-12 mr-[4rem] justify-items-center bg-[#6E1946]'>
+        <div className='pt-[1.5rem] pb-[3rem] pl-[2rem] w-[19rem] relative rounded-[4px]   pr-12 mr-[4rem] justify-items-center bg-[#6E1946]'>
           <h2 className='absolute font-bold left-[2rem] w-[30%] text-2xl text-white'>
             You have earned{' '}
             <span className='text-[#FAC39B] font-bold text-[40px]'>1500</span>{' '}

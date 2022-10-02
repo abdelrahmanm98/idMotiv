@@ -11,17 +11,26 @@ module.exports = {
 
       'lg': '768px',
       // => @media (min-width: 1024px) { ... }
+      'xl': '998px',
 
-      'xl': '1024px',
+      'xll': '1150px',
       // => @media (min-width: 1280px) { ... }
-
+      
+      '1xl': '1300px',
+      // => @media (min-width: 1536px) { ... }
+      '1-2xl': '1500px',
+      // => @media (min-width: 1536px) { ... }
       '2xl': '1680px',
+      // => @media (min-width: 1536px) { ... }
+      '2-1xl': '1736px',
+      // => @media (min-width: 1536px) { ... }
+      '3xl': '1840px',
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
       colors: {
-        primary: '##A162F7',   
-        grayDark:  '#7C7C8D',
+        primary: '##A162F7',
+        grayDark: '#7C7C8D',
       },
     },
   },
