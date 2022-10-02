@@ -10,6 +10,8 @@ module.exports = {
       // => @media (min-width: 768px) { ... }
 
       'lg': '768px',
+
+      'lx2': '850px',
       // => @media (min-width: 1024px) { ... }
       'xl': '998px',
 
@@ -17,12 +19,21 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
       
       '1xl': '1300px',
+
+      '1xll': '1380px',
+
       // => @media (min-width: 1536px) { ... }
       '1-2xl': '1500px',
+
+      '1-3xl': '1600px',
       // => @media (min-width: 1536px) { ... }
+      '2md': '1660px',
+
       '2xl': '1680px',
+
       // => @media (min-width: 1536px) { ... }
       '2-1xl': '1736px',
+
       // => @media (min-width: 1536px) { ... }
       '3xl': '1840px',
       // => @media (min-width: 1536px) { ... }

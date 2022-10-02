@@ -204,7 +204,7 @@ body {
 }
 
 .content-wrap .info-boxes {
-  padding: 1em 0em 3.5em 1.5em;
+  padding: 2em 0em 3.5em 2em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }

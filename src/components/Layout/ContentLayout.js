@@ -12,7 +12,7 @@ const ContentLayout = (props) => {
         <div>
           <Advertisement />
         </div>
-        <main className='grid mr-[4rem] ml-[7px] grid-cols-3 xl:grid-cols-2 1xl:grid-cols-3 sm:grid-cols-1 sm:w-[22rem] lg:w-[auto] '>
+        <main className='grid 2-1xl:mr-[4.5rem] 2md:mr-[1rem] ml-[14px] grid-cols-3 xl:grid-cols-2 1xl:grid-cols-3  sm:grid-cols-1 sm:w-[22rem] lg:w-[auto] '>
           {props.passDataCars.map((data) => (
             <DashContent
               key={data.id}
