@@ -7,7 +7,7 @@ const BookingPage = () => {
   useEffect(() => {
     const fetchCars = async () => {
       const response = await fetch(
-        'https://react-sendrequset-default-rtdb.firebaseio.com/cars.json'
+        'https://motivapi-default-rtdb.firebaseio.com/cars.json'
       );
       const responseData = await response.json();
 

@@ -91,3 +91,108 @@ body {
   padding: 0.5rem 0;
   border-radius: 14px;
 }
+
+/* style main Nav MediaQuery */
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: white;
+}
+
+@media (min-width: 600px) {
+  .header {
+    display: none;
+  }
+}
+
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.nav {
+  max-width: 968px;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 768px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  box-sizing: border-box;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+.nav__logo-text {
+  display: inline-block;
+}
+
+.nav__menu {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--body-color);
+  padding: 1rem 1.5rem 1rem;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  background-color: white;
+}
+.nav__btns {
+  display: flex;
+  align-items: center;
+}
+
+.show-menu {
+  bottom: 0;
+}
+
+.nav__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  font-weight: bolder;
+}
+
+.nav__list:visited {
+  color: rgb(220, 213, 213);
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav__link:hover {
+  color: rebeccapurple;
+}
+
+.nav__close {
+  position: absolute;
+  right: 1.3rem;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--first-color);
+}
+
+.nav__close:hover {
+  color: var(--first-color-alt);
+}
+
+.nav__item {
+  margin: 0.5rem;
+}

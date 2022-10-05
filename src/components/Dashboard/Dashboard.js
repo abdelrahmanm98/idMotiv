@@ -4,7 +4,6 @@ import Infobox from './sectionComponent/Infobox';
 
 import Header from '../Ui/Header';
 import Asaid from '../Ui/Asaid';
-
 import ContentLayout from '../Layout/ContentLayout';
 import DashLayout from '../Layout/DashLayout';
 
@@ -32,6 +31,7 @@ const Dashboard = (props) => {
             />
           ))}
           {/* (End) Layout Content  */}
+         
         </ContentLayout>
 
         {/* (End) LayOut DashBoard Content */}

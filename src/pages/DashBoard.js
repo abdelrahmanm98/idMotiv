@@ -185,7 +185,7 @@ const DashBoard = () => {
   useEffect(() => {
     const fetchCars = async () => {
       const response = await fetch(
-        'https://react-sendrequset-default-rtdb.firebaseio.com/dashCars.json'
+        'https://motivapi-default-rtdb.firebaseio.com/dashCars.json'
       );
       const responseData = await response.json();
 

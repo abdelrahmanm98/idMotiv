@@ -21,7 +21,7 @@ const Header = () => {
           <Notifications />
         </button>
         <button className='absolute top-[1px]'>
-          <img className='scale-125' src={porfilePage} width='48px' />
+          <img className='scale-125' alt='a' src={porfilePage} width='48px' />
         </button>
       </div>
     </header>

@@ -3,7 +3,7 @@ import { Fragment } from 'react';
 const DashContent = (props) => {
   return (
     <Fragment>
-      <div className=' mr-[1.5rem] sm:mb-[1rem] basis-1/3 rounded'>
+      <div className=' basis-1/3 rounded'>
         <div className={props.color}>
           <div className='my-4 '>
             <img

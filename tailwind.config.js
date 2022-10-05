@@ -3,40 +3,19 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     screens: {
-      'sm': '480px',
-      // => @media (min-width: 640px) { ... }
-
-      'md': '547px',
-      // => @media (min-width: 768px) { ... }
-
-      'lg': '768px',
-
-      'lx2': '850px',
-      // => @media (min-width: 1024px) { ... }
-      'xl': '998px',
-
-      'xll': '1150px',
-      // => @media (min-width: 1280px) { ... }
+      'sm': '200px',
       
-      '1xl': '1300px',
+      'mq' : '600px',
 
-      '1xll': '1380px',
+      'md': '768px',
 
-      // => @media (min-width: 1536px) { ... }
-      '1-2xl': '1500px',
+      'mdl': '890px',
 
-      '1-3xl': '1600px',
-      // => @media (min-width: 1536px) { ... }
-      '2md': '1660px',
+      'lg': '1024px',
 
-      '2xl': '1680px',
+      'xl': '1280px',
 
-      // => @media (min-width: 1536px) { ... }
-      '2-1xl': '1736px',
-
-      // => @media (min-width: 1536px) { ... }
-      '3xl': '1840px',
-      // => @media (min-width: 1536px) { ... }
+      '2xl': '1536px',
     },
     extend: {
       colors: {
