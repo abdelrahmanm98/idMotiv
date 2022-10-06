@@ -2,14 +2,14 @@ import { useState, useEffect } from 'react';
 import Booking from '../components/Cars/Booking';
 const BookingPage = () => {
   const [booking, setBooking] = useState([]);
-const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     const fetchCars = async () => {
-      setIsLoading(true)
+      setIsLoading(true);
       const response = await fetch(
         'https://motivapi-default-rtdb.firebaseio.com/cars.json'
       );
-      
+
       const responseData = await response.json();
 
       const loadedCars = [];
@@ -27,11 +27,10 @@ const [isLoading, setIsLoading] = useState(false)
         });
       }
       setBooking(loadedCars);
-      setIsLoading(false)
+      setIsLoading(false);
     };
     fetchCars();
   }, []);
-  
 
   return <Booking dataCars={booking} loading={isLoading} />;
 };

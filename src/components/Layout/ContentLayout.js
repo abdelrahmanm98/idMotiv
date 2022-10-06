@@ -5,8 +5,6 @@ import Advertisement from '../Dashboard/sectionComponent/Advertisement';
 import NavSmallS from '../Ui/NavSmallS';
 
 const ContentLayout = (props) => {
-  
-  
   return (
     <Fragment>
       <main className={classes['content-wrap']}>

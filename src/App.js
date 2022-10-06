@@ -9,7 +9,7 @@ import NotFound from './pages/NotFound';
 import AuthContext from './store/auth-context';
 
 function App() {
-  const authCtx = useContext(AuthContext)
+  const authCtx = useContext(AuthContext);
   return (
     <Layout>
       <Switch>
@@ -18,14 +18,14 @@ function App() {
           {/* <Booking /> */}
         </Route>
         {authCtx.isLoggedIn && (
-        <Route path='/dashboard'>
-          <DashBoard />
-        </Route>
+          <Route path='/dashboard'>
+            <DashBoard />
+          </Route>
         )}
         {authCtx.isLoggedIn && (
           <Route path='/booking'>
-          <Booking />
-        </Route>
+            <Booking />
+          </Route>
         )}
         <Route path='*'>
           <NotFound />

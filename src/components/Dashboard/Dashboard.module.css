@@ -25,11 +25,9 @@ body {
 @media (min-width: 240px) and (max-width: 600px) {
   .dashboard {
     display: inline-block;
-   overflow :auto;
-
+    overflow: auto;
   }
 }
-
 
 .search-wrap {
   grid-area: search;
@@ -44,7 +42,7 @@ body {
 
 @media (min-width: 220px) and (max-width: 600px) {
   .search-wrap {
-   height: 4rem;
+    height: 4rem;
   }
 }
 .search-wrap .search {
@@ -72,12 +70,11 @@ body {
   border: 0;
 }
 
-@media (min-width: 200px) and (max-width:730px) {
+@media (min-width: 200px) and (max-width: 730px) {
   .search-wrap .search label input {
     width: 170px;
   }
 }
-
 
 .search-wrap .search label input:focus {
   background: #f5f5fa;
@@ -127,7 +124,7 @@ body {
   background: #fff;
   border-right: 1px solid #ede8f0;
 }
-.navSmaillScreen{
+.navSmaillScreen {
   display: none;
   padding: 0 3% 0 3%;
   background-color: #99a0b0;
@@ -135,27 +132,26 @@ body {
   width: 100%;
   position: fixed;
   bottom: 0;
- height: 5rem;
- 
- visibility: visible;
- opacity: 1;
- transition-delay: 0s;
+  height: 5rem;
+
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
 }
 
-.smallNavHide{
+.smallNavHide {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s linear 0.33s, opcity 0.33s linear;
 }
 @media (min-width: 240px) and (max-width: 600px) {
   .menu-wrap {
-    display: none
+    display: none;
   }
-  .navSmaillScreen{
+  .navSmaillScreen {
     display: inline-block;
   }
 }
-
 
 .menu-wrap .user {
   height: 80px;

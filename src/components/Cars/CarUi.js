@@ -15,10 +15,7 @@ const CarUi = (props) => {
 
   return (
     <Fragment>
-      <div
-        key={props.id}
-        className='bg-white rounded-2xl  hover:bg-[#ebebeb]'
-      >
+      <div key={props.id} className='bg-white rounded-2xl  hover:bg-[#ebebeb]'>
         <div className='mt-[1.2rem] relative'>
           {redHeart && (
             <img
