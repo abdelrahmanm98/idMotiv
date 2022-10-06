@@ -181,8 +181,10 @@ const DUMMY_DATA_INFO = [
 
 const DashBoard = () => {
   const [dashCars, setdashCars] = useState([]);
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
+    setIsLoading(true)
     const fetchCars = async () => {
       const response = await fetch(
         'https://motivapi-default-rtdb.firebaseio.com/dashCars.json'
@@ -202,11 +204,13 @@ const DashBoard = () => {
         });
       }
       setdashCars(loadedCars);
+      setIsLoading(false)
     };
     fetchCars();
+    
   }, []);
 
-  return <Dashboard dataInfo={DUMMY_DATA_INFO} dashCars={dashCars} />;
+  return <Dashboard dataInfo={DUMMY_DATA_INFO} dashCars={dashCars} loading={isLoading} />;
 };
 
 export default DashBoard;

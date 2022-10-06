@@ -14,7 +14,7 @@ import { ReactComponent as Logo } from '../Dashboard/SvgIcon/logo-page.svg';
 import { ReactComponent as IconClose } from '../Dashboard/SvgIcon/icons8-close.svg';
 
 const NavSmallS = () => {
-  const [hide, setHide] = useState(true);
+  const [hide, setHide] = useState(false);
 
   const history = useHistory(); // Redirecting The User
 

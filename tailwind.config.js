@@ -4,14 +4,16 @@ module.exports = {
   theme: {
     screens: {
       'sm': '200px',
-      
-      'mq' : '600px',
+
+      'mq': '600px',
 
       'md': '768px',
 
       'mdl': '890px',
 
       'lg': '1024px',
+
+      'large': '1150px',
 
       'xl': '1280px',
 

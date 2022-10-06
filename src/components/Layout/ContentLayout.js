@@ -5,6 +5,8 @@ import Advertisement from '../Dashboard/sectionComponent/Advertisement';
 import NavSmallS from '../Ui/NavSmallS';
 
 const ContentLayout = (props) => {
+  
+  
   return (
     <Fragment>
       <main className={classes['content-wrap']}>
@@ -14,7 +16,7 @@ const ContentLayout = (props) => {
         <div>
           <Advertisement />
         </div>
-        <main className='grid mx-[3%] mb-[2rem] sm:mb-[6rem] lg:sm:mb-0 grid-cols-3 xl:grid-cols-3 gap-8 mdl:grid-cols-2  sm:grid-cols-1 '>
+        <main className='grid mx-[3%] mb-[2rem] sm:mb-[4rem] mq:mb-[2rem] grid-cols-3 xl:grid-cols-3 gap-8 mdl:grid-cols-2  sm:grid-cols-1 '>
           {props.passDataCars.map((data) => (
             <DashContent
               key={data.id}

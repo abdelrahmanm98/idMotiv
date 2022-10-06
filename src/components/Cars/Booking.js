@@ -3,14 +3,17 @@ import Aside from '../Ui/Asaid';
 import Header from '../Ui/Header';
 import DashLayout from '../Layout/DashLayout';
 import MainBooking from './MainBooking';
-
+import LoadingSpinner from '../Ui/LoadingSpinner';
 const Booking = (props) => {
   return (
     <Fragment>
       <DashLayout>
         <Aside />
         <Header />
-        <MainBooking dataCars={props.dataCars} />
+        {!props.loading &&
+        <MainBooking dataCars={props.dataCars} load={props.loading} />}
+         {props.loading && <LoadingSpinner />}
+
       </DashLayout>
     </Fragment>
   );

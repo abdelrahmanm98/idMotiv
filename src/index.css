@@ -150,6 +150,7 @@ body {
 .nav__btns {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .show-menu {
@@ -177,17 +178,18 @@ body {
 }
 
 .nav__link:hover {
-  color: rebeccapurple;
+  color: #a162f7;
+  font-weight: bold;
 }
 
 .nav__close {
   position: absolute;
-  right: 1.3rem;
-  bottom: 0.5rem;
+  right: 2.3rem;
+  bottom: 1rem;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--first-color);
 }
+
 
 .nav__close:hover {
   color: var(--first-color-alt);
@@ -196,3 +198,5 @@ body {
 .nav__item {
   margin: 0.5rem;
 }
+
+

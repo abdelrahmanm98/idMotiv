@@ -36,7 +36,7 @@ const Advertisement = () => {
           <div className='absolute  sm:top-[1.5rem] sm:right-[1.5rem] sm:hidden md:inline lg:hidden xl:inline-block  1-2xl:inline xll:right-[-50px] 3xl:right-0  xl:right-[-3.5rem] top-3 '>
             <ManOne />
           </div>
-          <span className='text-[#FF9619] left-[34px]  lg:bottom-5 sm:bottom-[5rem] xll:bottom-[2rem] text-xs absolute bottom-[2rem]'>
+          <span className='text-[#FF9619] left-[34px]  lg:bottom-[2rem]  sm:bottom-[4rem] xll:bottom-[2rem] text-xs absolute bottom-[2rem]'>
             Hooray! Way to go Mohammed!
           </span>
         </div>
@@ -55,7 +55,7 @@ const Advertisement = () => {
               alt='mySvgImage'
             />
           </div>
-          <span className='text-[#FAC39B] left-[35px] lg:bottom-5 sm:bottom-[5rem] xll:bottom-[2rem] text-xs absolute bottom-[2rem]'>
+          <span className='text-[#FAC39B] left-[35px] lg:bottom-[2rem] sm:bottom-[4rem] xll:bottom-[2rem] text-xs absolute bottom-[2rem]'>
             Redeem and claim your rewards!
           </span>
         </div>
